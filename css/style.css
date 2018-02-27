@@ -3,21 +3,40 @@
   padding: 0;
 }
 
+html {
+  font-size: 10px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: auto;
+}
+
 .clock-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 380px;
-  height: 420px;
-  margin: 50px auto;
-  border-radius: 10px;
+  width: 21rem;
+  height: 24rem;
+  margin: auto;
+  border-radius: 1rem;
   background-color: rgb(205,205,205);
 }
 
 .clock {
   position: relative;
-  width: 360px;
-  height: 360px;
+  width: 18rem;
+  height: 18rem;
   margin: auto;
   border-radius: 50%;
   background-color: #fff;
@@ -29,8 +48,8 @@
   top: 50%;
   left: 50%;
   z-index: 10;
-  width: 18px;
-  height: 18px;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
   background-color: #000;
   transform: translate(-50%, -50%);
@@ -47,14 +66,16 @@
 
 .scale {
   position: absolute;
-  font-size: 18px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 800;
   transform-origin: 50% 50%;
   transform: translate(-50%, -50%) rotateZ(90deg);
 }
 
-.hours-wrapper, .minutes-wrapper, .seconds-wrapper {
+.hours-wrapper,
+.minutes-wrapper,
+.seconds-wrapper {
   position: absolute;
   top: 0;
   right: 0;
@@ -67,8 +88,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 9px;
-  height: 45px;
+  width: .6rem;
+  height: 3rem;
   background-color: #000;
   transform-origin: 50% 100%;
   transform: translateX(-50%);
@@ -78,8 +99,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 6px;
-  height: 90px;
+  width: .3rem;
+  height: 6rem;
   background-color: #000;
   transform-origin: 50% 100%;
   transform: translateX(-50%);
@@ -90,8 +111,8 @@
   top: 50%;
   left: 50%;
   z-index: 5;
-  width: 3px;
-  height: 150px;
+  width: .1rem;
+  height: 9rem;
   background-color: #f00;
   transform-origin: 50% 75%;
   transform: translate(-50%, -25%);
