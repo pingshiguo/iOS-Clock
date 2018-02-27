@@ -23,8 +23,8 @@ function runClock() {
 }
 
 function drawClockScale() {
-  const ORIGIN_X = 108;
-  const ORIGIN_Y = 108;
+  const ORIGIN_X = 90;
+  const ORIGIN_Y = 90;
   const R = 90;
   const DEG = Math.PI * 2 / 12;
 
