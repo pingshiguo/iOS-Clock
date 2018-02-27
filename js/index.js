@@ -25,7 +25,7 @@ function runClock() {
 function drawClockScale() {
   const ORIGIN_X = 108;
   const ORIGIN_Y = 108;
-  const R = 120;
+  const R = 90;
   const DEG = Math.PI * 2 / 12;
 
   for (let i = 1; i <= 12; i++) {
